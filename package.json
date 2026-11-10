@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "node scripts/copy-occt.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,14 +15,17 @@
   "dependencies": {
     "@upstash/redis": "^1.41.0",
     "next": "^15.5.29",
+    "occt-import-js": "^0.0.23",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@types/node": "^22.20.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
     "typescript": "^5.9.3"
   }
 }

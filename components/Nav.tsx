@@ -21,6 +21,7 @@ export default async function Nav() {
       </Link>
       <nav className="nav-links" aria-label="Główna nawigacja">
         <Link href="/drukarze">Drukarze</Link>
+        <Link href="/slicer">Slicer</Link>
         <Link href="/#jak-to-dziala">Jak to działa</Link>
         <Link href="/#dla-drukarzy">Dla drukarzy</Link>
       </nav>
