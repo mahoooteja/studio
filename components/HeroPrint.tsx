@@ -183,7 +183,7 @@ export default function HeroPrint() {
         const t = i / n;
         const a = iso(t * s, -s, 0), b = iso(t * s, s, 0);
         const c = iso(-s, t * s, 0), d = iso(s, t * s, 0);
-        ctx.strokeStyle = i === 0 ? "rgba(255,90,31,0.18)" : "rgba(255,255,255,0.045)";
+        ctx.strokeStyle = i === 0 ? "rgba(47,209,106,0.18)" : "rgba(255,255,255,0.045)";
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
@@ -226,8 +226,8 @@ export default function HeroPrint() {
       ctx.stroke();
       // poświata
       const glow = ctx.createRadialGradient(x, y, 0, x, y, 26);
-      glow.addColorStop(0, "rgba(255,110,50,0.55)");
-      glow.addColorStop(1, "rgba(255,90,31,0)");
+      glow.addColorStop(0, "rgba(80,224,130,0.55)");
+      glow.addColorStop(1, "rgba(47,209,106,0)");
       ctx.fillStyle = glow;
       ctx.beginPath();
       ctx.arc(x, y, 26, 0, Math.PI * 2);
@@ -239,7 +239,7 @@ export default function HeroPrint() {
       ctx.rect(x - 13, y - 44, 26, 22);
       ctx.fill();
       ctx.stroke();
-      ctx.fillStyle = "#ff5a1f";
+      ctx.fillStyle = "#2fd16a";
       ctx.fillRect(x - 13, y - 44, 3, 22);
       // radiator
       ctx.strokeStyle = "rgba(255,255,255,0.12)";
