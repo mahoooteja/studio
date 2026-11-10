@@ -1,0 +1,18 @@
+import Logo from "./Logo";
+
+export default function AuthSide({ title }: { title: string }) {
+  return (
+    <aside className="auth-side grid-bg">
+      <div className="logo"><Logo /> WARSTWA</div>
+      <div>
+        <h2>{title}</h2>
+        <div className="spec" style={{ marginTop: 40, maxWidth: 420 }}>
+          <div className="spec-row"><span>01</span><span>Wyślij zapytanie do wybranego drukarza</span></div>
+          <div className="spec-row"><span>02</span><span>Akceptacja, odrzucenie albo prośba o pomoc</span></div>
+          <div className="spec-row"><span>03</span><span>Śledź druk aż do odbioru</span></div>
+        </div>
+      </div>
+      <div className="mono dim">X 000.00 · Y 000.00 · Z 0.20</div>
+    </aside>
+  );
+}
